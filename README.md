@@ -85,7 +85,7 @@ Explanation of config-file fields:
 * `out_dir`: output directory path **required**
 
 * `db`: path to database **required** 
-  Here we offer you to specify one of 13 available databases that we added specifically from the PIA2 version.
+  (Here we offer you to specify one of 13 available databases that we added specifically from the PIA2 version)
 
 * `transcripts`: **cds** - perform BLAST search only on coding sequences (longer than 1/2 of mean database sequence and starting with methionine); **all** use all sequences
 
