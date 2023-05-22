@@ -1,0 +1,10 @@
+db: "classification_opsins_full_aa.fasta"
+in_dir: "test_data"
+out_dir: "test_out"
+model: "LG+F+G4"
+outgroup: "RHO_Bos_taurus_AAA30674.1"
+cd_h: 0.95
+bit_score: 40
+clean: True
+transcripts: "cds"
+opsins: True
