@@ -2,15 +2,18 @@
 Here's a repo with some code for the free interpretation of the "The diversity of opsins in Lake Baikal amphipods (Amphipoda: Gammaridae)" article
 
 ## Aim: 
-to reproduce results from the article
+The aim of this project was to reproduce results from the article. Basically the target was to find out which phylogenetic groups had opsins and how diverse their quantity was.
 
 ## Tasks:
-Master the techniques used
-Beautifully arrange a repo with all methods used
-Estimate the reproducibility of methods described
-Add one more database to use
+To achieve the mentioned aim it was decided to set some necessary tasks:
+* Master the techniques used - scroll through the scripts used, explore the new programs
+* Beautifully arrange a repo with all methods used - make a fork of a repo with possibly some custom additions
+* Estimate the reproducibility of methods described - repeat the analysis from the article (or a part of it) and compare the results
+* Add one more database to use - a supplementary task that appeared while reproducing the analysis
 
 ## Results:
+All tasks have been completed. After running PIA3 on the downloaded data there were some mismatches in the quantity of opsins between the published and the newly obtained data (however, mostly on the high side). While checking through the pipeline for any commands that went missing in the current launch, we discovered that the file with hits not only contained opsins but also other G protein-coupled receptors. To avoid running the whole pipeline again, we wrote an additional script to filter out excessive sequences based on the script from the article. Also, since some other databases of non-opsins vision-related genes were not included in the PIA3 after evolving from PIA2, they were included by concatenating multiple fasta files with them to multi-fasta files and adding them to the PIA3.
+The diversity of opsins in amphipods was re-explored. At first, it seemed that the results were not reproduced but after discovering the mistake of not specifying the  –opsin option it was fixed. The tool was also replenished with additional databases from the previous version to increase its flexibility.
 The main result of this work is an Excel table with hits of opsins count, it can be found in a **results** directory
 
 ## Literature:
